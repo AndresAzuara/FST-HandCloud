@@ -1,0 +1,97 @@
+﻿@model List<Core.Entities.CarEntity>
+
+
+@if (Model.Count == 0)
+{
+    <h1>No hay datos agragados, agregue uno y vuelva a intentarlo</h1>
+}
+else
+{
+<div id="ordersGrid"></div>
+}
+
+<script>
+    var cars = @Html.Raw(Json.Serialize(Model));
+
+    var gridDataSource = new kendo.data.DataSource({
+        data: cars,
+        schema: {
+            model: {
+                fields: {
+                    id: { type: "number" },
+                    model: { type: "string" },
+                    description: { type: "string" },
+                    brand: { type: "string" },
+                    year: { type: "number" },
+                    kilometers: { type: "number" },
+                    price: { type: "number" }
+                }
+            }
+        },
+        pageSize: 10,
+        sort: {
+            field: "Id",
+            dir: "desc"
+        }
+    });
+
+    $("#ordersGrid").kendoGrid({
+        dataSource: gridDataSource,
+        height: 550,
+        groupable: true,
+        sortable: true,
+        pageable: {
+            refresh: true,
+            pageSizes: true,
+            buttonCount: 5
+        },
+        columns: [
+            {
+                field: "id",
+                title: "Id"
+            },
+            {
+                field: "model",
+                title: "Model"
+            },
+            {
+                field: "description",
+                title: "Description"
+            },
+            {
+                field: "year",
+                title: "Year"
+            },
+            {
+                field: "brand",
+                title: "Brand"
+            },
+            {
+                field: "kilometers",
+                title: "Kilometers"
+            },
+            {
+                field: "price",
+                title: "Price"
+            },
+            {
+                template: function (dataItem) {
+                    return "<a class='btn btn-primary btn-sm waves-effect' asp-action='Update' asp-controller='Car'" +
+                        "href='/Car/Update?carId=" + dataItem.id
+                        + "&carModel=" + dataItem.model
+                        + "&carDesc=" + dataItem.description
+                        + "&brand=" + dataItem.brand
+                        + "&kil=" + dataItem.kilometers
+                        + "&price=" + dataItem.price
+                        + ".0&year=" + dataItem.year + "'" + "'>Update</a>"
+
+                }
+            },
+            {
+                template: function (dataItem) {
+                    return "<a class='btn btn-danger' href='/Car/Delete?car=" + dataItem.id + "' onclick=\"return confirm('Quieres eliminar este carro?')\">Delete</a>"
+                }
+            }
+        ]
+    });
+</script>

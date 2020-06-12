@@ -1,0 +1,9 @@
+C:\Users\pepti\source\repos\ProjectTSF\Core\bin\Debug\netcoreapp2.1\Core.deps.json
+C:\Users\pepti\source\repos\ProjectTSF\Core\bin\Debug\netcoreapp2.1\Core.dll
+C:\Users\pepti\source\repos\ProjectTSF\Core\bin\Debug\netcoreapp2.1\Core.pdb
+C:\Users\pepti\source\repos\ProjectTSF\Core\obj\Debug\netcoreapp2.1\Core.csprojAssemblyReference.cache
+C:\Users\pepti\source\repos\ProjectTSF\Core\obj\Debug\netcoreapp2.1\Core.AssemblyInfoInputs.cache
+C:\Users\pepti\source\repos\ProjectTSF\Core\obj\Debug\netcoreapp2.1\Core.AssemblyInfo.cs
+C:\Users\pepti\source\repos\ProjectTSF\Core\obj\Debug\netcoreapp2.1\Core.dll
+C:\Users\pepti\source\repos\ProjectTSF\Core\obj\Debug\netcoreapp2.1\Core.pdb
+C:\Users\pepti\source\repos\ProjectTSF\Core\obj\Debug\netcoreapp2.1\Core.csproj.CoreCompileInputs.cache
