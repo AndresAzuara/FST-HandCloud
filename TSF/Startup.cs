@@ -65,7 +65,6 @@ namespace TSF
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-            app.UseStatusCodePages();
             app.UseCors();
 
             app.UseMvc(routes =>

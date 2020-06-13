@@ -202,7 +202,7 @@ Write(Html.HiddenFor(model => model.Id));
             WriteLiteral("\r\n    </div>\r\n    <button id=\"sendData\" type=\"submit\" value=\"Guardar\" class=\"btn btn-primary\">Guardar</button>\r\n    ");
             EndContext();
             BeginContext(2095, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9de2b461e0eb458fb70798ab6b89c6a1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c2b23c739fc4c1e9ad3905bdc593c09", async() => {
                 BeginContext(2160, 8, true);
                 WriteLiteral("Cancelar");
                 EndContext();
