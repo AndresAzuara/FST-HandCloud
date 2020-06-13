@@ -18,6 +18,7 @@ namespace TSF.Controllers
         public CarController(ICarService carService)
         {
             _carService = carService;
+            _carService.makeSeed();
         }
         public IActionResult Create()
         {

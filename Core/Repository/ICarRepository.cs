@@ -10,6 +10,7 @@ namespace Core.Repository
     {
         List<CarEntity> CreateCar(CarEntity car);
         IEnumerable<CarEntity> Get();
+        void makeSeedToDisk();
         CarEntity GetById(CarEntity car);
         List<CarEntity> UpdateCar(CarEntity car);
         List<CarEntity> DeleteCar(int car);

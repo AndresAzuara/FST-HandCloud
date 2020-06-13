@@ -14,6 +14,10 @@ namespace Core.Service
         {
             _carRepository = carRepository;
         }
+        public void makeSeed()
+        {
+            _carRepository.makeSeedToDisk();
+        }
         public List<CarEntity> CreateCar(CarEntity car)
         {
             var carCreated = _carRepository.CreateCar(car);

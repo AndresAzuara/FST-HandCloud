@@ -7,6 +7,7 @@ namespace Core.Repository
 {
     public interface IRepositoryBase
     {
+        void makeSeed();
         List<CarEntity> Create(CarEntity newCar);
         List<CarEntity> GetAll();
         CarEntity Get(int id);

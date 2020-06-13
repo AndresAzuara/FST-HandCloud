@@ -18,13 +18,8 @@ using TSF;
 
 #line default
 #line hidden
-#line 2 "C:\Users\pepti\source\repos\ProjectTSF\TSF\Views\_ViewImports.cshtml"
-using TSF.Models;
-
-#line default
-#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cbbb143727f6d26bbbe275394e1bf7acd1706373", @"/Views/Car/Create.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fb6cca21224d1e9bad963fb3e4da25544ff67fc0", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"048f51ff9bb030fde3edc835032a6363577dcc52", @"/Views/_ViewImports.cshtml")]
     public class Views_Car_Create : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Core.Entities.CarEntity>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -207,7 +202,7 @@ Write(Html.HiddenFor(model => model.Id));
             WriteLiteral("\r\n    </div>\r\n    <button id=\"sendData\" type=\"submit\" value=\"Guardar\" class=\"btn btn-primary\">Guardar</button>\r\n    ");
             EndContext();
             BeginContext(2095, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b880229c39434bd7ad0dc306b3de0cf3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9de2b461e0eb458fb70798ab6b89c6a1", async() => {
                 BeginContext(2160, 8, true);
                 WriteLiteral("Cancelar");
                 EndContext();

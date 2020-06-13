@@ -83,13 +83,13 @@ else
                         + "&brand=" + dataItem.brand
                         + "&kil=" + dataItem.kilometers
                         + "&price=" + dataItem.price
-                        + ".0&year=" + dataItem.year + "'" + "'>Update</a>"
+                        + ".0&year=" + dataItem.year + "'" + "'>Actualizar</a>"
 
                 }
             },
             {
                 template: function (dataItem) {
-                    return "<a class='btn btn-danger' href='/Car/Delete?car=" + dataItem.id + "' onclick=\"return confirm('Quieres eliminar este carro?')\">Delete</a>"
+                    return "<a class='btn btn-danger' href='/Car/Delete?car=" + dataItem.id + "' onclick=\"return confirm('Quieres eliminar este carro?')\">Eliminar</a>"
                 }
             }
         ]

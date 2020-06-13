@@ -13,5 +13,6 @@ namespace Core.Service
         CarEntity GetById(CarEntity car);
         List<CarEntity> UpdateCar(CarEntity car);
         List<CarEntity> DeleteCar(int car);
+        void makeSeed();
     }
 }

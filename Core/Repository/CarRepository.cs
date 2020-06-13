@@ -14,6 +14,10 @@ namespace Core.Repository
             var response = Create(car);
             return response;
         }
+        public void makeSeedToDisk()
+        {
+            makeSeed();
+        }
 
         public List<CarEntity> DeleteCar(int car)
         {
